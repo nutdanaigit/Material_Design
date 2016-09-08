@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ayp.aug.material.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_on_main"
+        android:title="@string/app_name"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="?attr/actionBarSize">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_main"
+        android:name="ayp.aug.material.MainFragment"
+        tools:layout="@layout/fragment_main"/>
+
+</LinearLayout>
